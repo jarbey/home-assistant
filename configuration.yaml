@@ -81,11 +81,12 @@ media_extractor:
   default_query: best[height<=720]
 
 shell_command:
-  chromecast_start: python_scripts/chromecast.sh
-  tv_stop: python_scripts/stop.sh
+  tv_chromecast_start: python_scripts/tv_chromecast.sh
+  tv_stop: python_scripts/tv_stop.sh
 
 scene: !include_dir_list scene/
 switch: !include switchs.yaml
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
+cover: !include covers.yaml
