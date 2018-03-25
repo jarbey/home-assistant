@@ -2,7 +2,7 @@ homeassistant:
   # Name of the location where Home Assistant is running
   name: Home
   # Location required to calculate the time the sun rises and sets
-  latitude: 47.0358
+  latitude: 47.03
   longitude: -1.6412
   # Impacts weather/sunrise data (altitude above sea level in meters)
   elevation: 0
@@ -12,6 +12,8 @@ homeassistant:
   time_zone: Europe/Paris
   # Customization file
   customize: !include customize.yaml
+
+#logger:
 
 # Show links to resources in log and frontend
 introduction:
@@ -81,8 +83,12 @@ media_extractor:
   default_query: best[height<=720]
 
 shell_command:
-  tv_chromecast_start: python_scripts/tv_chromecast.sh
-  tv_stop: python_scripts/tv_stop.sh
+  tv_chromecast_start: /home/homeassistant/.homeassistant/python_scripts/tv_chromecast.sh
+  tv_stop: /home/homeassistant/.homeassistant/python_scripts/tv_stop.sh
+  cover_salle_a_manger_up: python /home/homeassistant/.homeassistant/python_scripts/cover.py 5
+  cover_salle_a_manger_down: python /home/homeassistant/.homeassistant/python_scripts/cover.py 6
+  cover_salon2_up: python /home/homeassistant/.homeassistant/python_scripts/cover.py 20
+  cover_salon2_down: python /home/homeassistant/.homeassistant/python_scripts/cover.py 21
 
 scene: !include_dir_list scene/
 switch: !include switchs.yaml

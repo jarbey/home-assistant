@@ -1,12 +1,18 @@
-- platform: command_line
+- platform: template
   covers:
     cover_salle_a_manger:
       friendly_name: 'Volet - Salle à manger'
-      command_open: python_scripts/cover.sh 5
-      command_close: python_scripts/cover.sh 6
-      command_stop: python_scripts/cover.sh 6
+      open_cover:
+        service: script.cover_salle_a_manger_up
+      close_cover:
+        service: script.cover_salle_a_manger_down
+      stop_cover:
+        service: script.cover_salle_a_manger_down
     cover_salon2:
       friendly_name: 'Volet - Salon 2'
-      command_open: python_scripts/cover.sh 20
-      command_close: python_scripts/cover.sh 21
-      command_stop: python_scripts/cover.sh 21
+      open_cover:
+        service: script.cover_salon2_up
+      close_cover:
+        service: script.cover_salon2_down
+      stop_cover:
+        service: script.cover_salon2_down

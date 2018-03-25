@@ -1,4 +1,4 @@
-- alias: "Lancer la TV si stream sur Salon"
+- alias: "TV - Lancer la TV si stream sur Salon"
   trigger:
     platform: state
     entity_id: media_player.Salon
@@ -7,7 +7,8 @@
     - service: script.tv_chromecast_start
     - service: scene.turn_on
       entity_id: scene.cinema
-- alias: "Arreter la TV si fin de stream sur Salon"
+
+- alias: "TV - Arreter la TV si fin de stream sur Salon"
   trigger:
     platform: state
     entity_id: media_player.Salon
@@ -17,3 +18,27 @@
     - service: script.tv_stop
     - service: scene.turn_on
       entity_id: scene.normal
+
+- alias: "Volets - Fermer les volets"
+  trigger:
+    - platform: sun
+      event: sunset
+      offset: '+00:30:00'
+  action:
+    - service: cover.close_cover
+      data:
+        entity_id: cover.cover_salle_a_manger
+    - service: cover.close_cover
+      data:
+        entity_id: cover.salon2
+- alias: "Volets - Ouvrir les volets"
+  trigger:
+    - platform: sun
+      event: sunrise
+  action:
+    - service: cover.open_cover
+      data:
+        entity_id: cover.cover_salle_a_manger
+    - service: cover.open_cover
+      data:
+        entity_id: cover.salon2

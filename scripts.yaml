@@ -1,9 +1,23 @@
-chromecast_start:
+tv_chromecast_start:
   alias: Start Chromecast
   sequence:
-    - service: shell_command.chromecast_start
+    - service: shell_command.tv_chromecast_start
 
 tv_stop:
   alias: Stop TV
   sequence:
     - service: shell_command.tv_stop
+
+cover_salle_a_manger_up:
+  sequence:
+    - service: shell_command.cover_salle_a_manger_up
+cover_salle_a_manger_down:
+  sequence:
+    - service: shell_command.cover_salle_a_manger_down
+
+cover_salon2_up:
+  sequence:
+    - service: shell_command.cover_salon2_up
+cover_salon2_down:
+  sequence:
+    - service: shell_command.cover_salon2_down
