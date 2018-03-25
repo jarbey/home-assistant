@@ -1,0 +1,48 @@
+media_player.bureau:
+  name:
+  platform: cast
+  unique_id: cc85ad6e-0483-5ad3-b48e-8195d3791068
+media_player.home_salon:
+  name:
+  platform: cast
+  unique_id: 8fb3ff35-3f5a-19a0-0f9f-e12541d3352e
+media_player.salon:
+  name:
+  platform: cast
+  unique_id: febeab51-5b14-0092-02a9-ca47a5df9841
+light.salon__projecteur:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:03:87:b3:65-0b
+light.salle_a_manger__table_marbre:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:03:fb:56:fd-0b
+light.bureau__plafond:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:03:fb:95:7d-0b
+light.salon__tv:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:03:f9:37:27-0b
+light.salon__canape:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:03:7e:5f:5d-0b
+light.salon__lampadaire:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:03:87:73:10-0b
+light.salle_a_manger__meuble_bois:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:03:3b:79:ee-0b
+light.cuisine__plafond:
+  name:
+  platform: hue
+  unique_id: 00:15:8d:00:01:b6:de:c5-01
+light.entree__plafond:
+  name:
+  platform: hue
+  unique_id: 00:15:8d:00:01:b6:c0:20-01

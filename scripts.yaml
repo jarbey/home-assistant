@@ -1,0 +1,9 @@
+chromecast_start:
+  alias: Start Chromecast
+  sequence:
+    - service: shell_command.chromecast_start
+
+tv_stop:
+  alias: Stop TV
+  sequence:
+    - service: shell_command.tv_stop

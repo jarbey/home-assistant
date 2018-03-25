@@ -1,0 +1,26 @@
+name: cinema 
+entities:
+  light.salon__projecteur:
+    state: on
+    brightness: 255
+    rgb_color: [255, 99, 210]
+  light.salon__lampadaire:
+    state: on
+    brightness: 255
+    rgb_color: [255, 99, 210]
+  light.salon__canape:
+    state: on
+    brightness: 255
+    kelvin: 2200
+  light.salon__tv:
+    state: on
+    brightness: 255
+    kelvin: 2200
+  light.salle_a_manger:
+    state: off
+  light.bureau:
+    state: off
+  light.cuisine:
+    state: off
+  light.entree:
+    state: off

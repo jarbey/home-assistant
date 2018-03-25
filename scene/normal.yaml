@@ -1,0 +1,26 @@
+name: Normal
+entities:
+  light.salon__projecteur:
+    state: on
+    brightness: 255
+    rgb_color: [255, 227, 182]
+  light.salon__lampadaire:
+    state: on
+    brightness: 255
+    rgb_color: [255, 227, 182]
+  light.salon__canape:
+    state: on
+    brightness: 255
+    kelvin: 3000
+  light.salon__tv:
+    state: on
+    brightness: 255
+    kelvin: 3000
+  light.salle_a_manger__table_marbre:
+    state: on
+    brightness: 255
+    kelvin: 3000
+  light.salle_a_manger__meuble_bois:
+    state: on
+    brightness: 255
+    kelvin: 3000
