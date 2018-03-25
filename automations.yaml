@@ -4,7 +4,7 @@
     entity_id: media_player.Salon
     from: 'off'
   action:
-    - service: script.chromecast_start
+    - service: script.tv_chromecast_start
     - service: scene.turn_on
       entity_id: scene.cinema
 - alias: "Arreter la TV si fin de stream sur Salon"

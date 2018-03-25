@@ -2,11 +2,11 @@
   covers:
     cover_salle_a_manger:
       friendly_name: 'Volet - Salle à manger'
-      command_open: python_scripts/cover.sh 17
-      command_close: python_scripts/cover.sh 27
-      command_stop: python_scripts/cover.sh 27
+      command_open: python_scripts/cover.sh 5
+      command_close: python_scripts/cover.sh 6
+      command_stop: python_scripts/cover.sh 6
     cover_salon2:
       friendly_name: 'Volet - Salon 2'
-      command_open: python_scripts/cover.sh 24
-      command_close: python_scripts/cover.sh 23
-      command_stop: python_scripts/cover.sh 23
+      command_open: python_scripts/cover.sh 20
+      command_close: python_scripts/cover.sh 21
+      command_stop: python_scripts/cover.sh 21
