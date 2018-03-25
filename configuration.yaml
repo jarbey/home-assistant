@@ -81,8 +81,8 @@ media_extractor:
   default_query: best[height<=720]
 
 shell_command:
-  chromecast_start: /home/pi/chromecast.sh
-  tv_stop: /home/pi/stop.sh
+  chromecast_start: python_scripts/chromecast.sh
+  tv_stop: python_scripts/stop.sh
 
 scene: !include_dir_list scene/
 switch: !include switchs.yaml
