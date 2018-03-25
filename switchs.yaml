@@ -1,0 +1,6 @@
+- platform: command_line
+  switches:
+    volet_salle_a_manger:
+      friendly_name: "Volet - Salle à manger"
+      command_on: "python /home/homeassistant/python_scripts/volet.py 27 0"
+      command_off: "python /home/homeassistant/python_scripts/volet.py 17 0"
