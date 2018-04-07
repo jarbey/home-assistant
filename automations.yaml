@@ -21,24 +21,27 @@
 
 - alias: "Volets - Fermer les volets"
   trigger:
-    - platform: sun
-      event: sunset
-      offset: '+00:30:00'
+    platform: numeric_state
+    entity_id: sun.sun
+    value_template: '{{ state.attributes.elevation }}'
+    below: -4.5
   action:
     - service: cover.close_cover
       data:
-        entity_id: cover.cover_salle_a_manger
-    - service: cover.close_cover
-      data:
-        entity_id: cover.salon2
+        entity_id:
+          - cover.cover_salle_a_manger
+          - cover.cover_salon1
+          - cover.cover_salon2
 - alias: "Volets - Ouvrir les volets"
   trigger:
-    - platform: sun
-      event: sunrise
+    platform: numeric_state
+    entity_id: sun.sun
+    value_template: '{{ state.attributes.elevation }}'
+    above: -2
   action:
     - service: cover.open_cover
       data:
-        entity_id: cover.cover_salle_a_manger
-    - service: cover.open_cover
-      data:
-        entity_id: cover.salon2
+        entity_id:
+          - cover.cover_salle_a_manger
+          - cover.cover_salon1
+          - cover.cover_salon2

@@ -16,3 +16,11 @@
         service: script.cover_salon2_down
       stop_cover:
         service: script.cover_salon2_down
+    cover_salon1:
+      friendly_name: 'Volet - Salon 1'
+      open_cover:
+        service: script.cover_salon1_up
+      close_cover:
+        service: script.cover_salon1_down
+      stop_cover:
+        service: script.cover_salon1_down

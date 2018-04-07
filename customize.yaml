@@ -2,6 +2,10 @@ script.cover_salle_a_manger_up:
   hidden: true
 script.cover_salle_a_manger_down:
   hidden: true
+script.cover_salon1_up:
+  hidden: true
+script.cover_salon1_down:
+  hidden: true
 script.cover_salon2_up:
   hidden: true
 script.cover_salon2_down:

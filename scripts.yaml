@@ -15,6 +15,13 @@ cover_salle_a_manger_down:
   sequence:
     - service: shell_command.cover_salle_a_manger_down
 
+cover_salon1_up:
+  sequence:
+    - service: shell_command.cover_salon1_up
+cover_salon1_down:
+  sequence:
+    - service: shell_command.cover_salon1_down
+
 cover_salon2_up:
   sequence:
     - service: shell_command.cover_salon2_up
