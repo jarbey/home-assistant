@@ -85,12 +85,12 @@ media_extractor:
 shell_command:
   tv_chromecast_start: /home/homeassistant/.homeassistant/python_scripts/tv_chromecast.sh
   tv_stop: /home/homeassistant/.homeassistant/python_scripts/tv_stop.sh
-  cover_salle_a_manger_up: python /home/homeassistant/.homeassistant/python_scripts/cover.py 5
-  cover_salle_a_manger_down: python /home/homeassistant/.homeassistant/python_scripts/cover.py 6
+  cover_salle_a_manger_up: python /home/homeassistant/.homeassistant/python_scripts/cover.py 20
+  cover_salle_a_manger_down: python /home/homeassistant/.homeassistant/python_scripts/cover.py 21
   cover_salon1_up: python /home/homeassistant/.homeassistant/python_scripts/cover.py 19
   cover_salon1_down: python /home/homeassistant/.homeassistant/python_scripts/cover.py 26
-  cover_salon2_up: python /home/homeassistant/.homeassistant/python_scripts/cover.py 20
-  cover_salon2_down: python /home/homeassistant/.homeassistant/python_scripts/cover.py 21
+  cover_salon2_up: python /home/homeassistant/.homeassistant/python_scripts/cover.py 5
+  cover_salon2_down: python /home/homeassistant/.homeassistant/python_scripts/cover.py 6
 
 scene: !include_dir_list scene/
 switch: !include switchs.yaml
