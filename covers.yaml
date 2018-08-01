@@ -24,3 +24,10 @@
         service: script.cover_salon1_down
       stop_cover:
         service: script.cover_salon1_down
+
+- platform: group
+  name: 'Tous les volets'
+  entities:
+    - cover.cover_salle_a_manger
+    - cover.cover_salon1
+    - cover.cover_salon2

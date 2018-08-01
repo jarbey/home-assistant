@@ -3,10 +3,9 @@
     platform: state
     entity_id: media_player.Salon
     from: 'off'
+    to: 'playing'
   action:
     - service: script.tv_chromecast_start
-    - service: scene.turn_on
-      entity_id: scene.cinema
 
 - alias: "TV - Arreter la TV si fin de stream sur Salon"
   trigger:
@@ -16,8 +15,6 @@
     to: 'off'
   action:
     - service: script.tv_stop
-    - service: scene.turn_on
-      entity_id: scene.normal
 
 - alias: "Volets - Fermer les volets"
   trigger:
